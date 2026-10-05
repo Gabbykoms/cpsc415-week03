@@ -1,0 +1,9 @@
+Model: minimax/minimax-m3
+FAIL billing: {"category": "billing", "urgency": "high", "reason": "The user reports an incorrect duplicate subscription charge requiring an immediate refund to resolve the financial error."}; expected categories=['billing'], urgencies=['medium']
+PASS technical: {"category": "technical", "urgency": "high", "reason": "Production service outage affecting all customers requires immediate technical intervention."}
+PASS sales: {"category": "sales", "urgency": "low", "reason": "The user is asking about available plans and pricing for a team of ten, which is a general sales inquiry."}
+PASS ambiguous: {"category": "technical", "urgency": "medium", "reason": "The user reports premium features remain locked after a plan upgrade, which is an access/activation issue requiring technical investigation, though it may stem from a billing transaction."}
+PASS unrelated: {"category": "unknown", "urgency": "low", "reason": "The message is a casual, unrelated comment about autumn leaves with no connection to billing, technical, or sales topics."}
+Summary: model=minimax/minimax-m3 passed=4/5
+prompt_tokens: 1452
+completion_tokens: 553

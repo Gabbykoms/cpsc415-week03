@@ -1,35 +1,30 @@
 # Project conventions
 
-<!-- The agent reads this at the start of every session. Keep it short and current.
-     Graded: does it reflect how the team actually works? -->
-
 ## What this repository is
-One paragraph. Link to the current `spec.md`.
+Week 3 support-message classifier and five-case evaluation. See [spec.md](spec.md) and the approved [intent](intent/classifier.md).
 
 ## Commands
-```
-# build
-# test
-# run
-# lint
+```bash
+python3 classifier.py "Your support message"
+python3 eval.py
 ```
 
 ## Conventions
-- Language and style rules the agent must follow.
-- Where tests live and how they are named.
-- Branch and PR naming.
+- Python standard library only; snake_case Python names and lowercase filenames.
+- Default model: `minimax/minimax-m3`; comparison: `xiaomi/mimo-v2.6-flash`.
+- Cases live in `cases.json`; observations in `CHECKS.md`; captured runs in `results/`.
+- These are Gabriel's lab conventions; team-wide conventions have not been supplied.
 
 ## Working rules
-
 - This is the Week 3 introductory lab. Stages assigned: intent and spec.
   No plan.md, no branches or pull requests. Commit to main.
 - Standard library only, except that Java may add one JSON library jar.
-
-For an introductory lab, follow its explicitly assigned stages; the full chain below applies to major projects. Week 1 uses its own minimal repository.
-
-- Write or update `intent/` and `spec.md` before code. Get `plan.md` approved before implementing.
-- One feature per branch and pull request. Never push to `main` directly.
-- Never commit `.env` or `.claude/settings.local.json`.
+- Intent, spec, and implementation approach were approved in conversation before coding.
+- Never commit API keys, `.env`, or `.claude/settings.local.json`.
+- Keep the prompt, cases, and settings identical between comparison models.
+- Record failures honestly; do not change expected answers to improve a model's score.
 
 ## Common mistakes
-Things the agent got wrong before and must not repeat. Add to this list as they happen.
+- Do not strip fences or prose to make invalid model output pass strict parsing.
+- Do not lose usage counts when a billed reply fails validation.
+- Do not claim a student spec correction was made: Gabriel approved it unchanged.

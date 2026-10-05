@@ -1,0 +1,58 @@
+[
+  {
+    "id": "billing",
+    "message": "I was charged twice for my monthly subscription. Please refund the duplicate charge.",
+    "categories": [
+      "billing"
+    ],
+    "urgencies": [
+      "medium"
+    ],
+    "purpose": "Recognize a payment problem."
+  },
+  {
+    "id": "technical",
+    "message": "Our production service is down and every customer is blocked. We need help immediately.",
+    "categories": [
+      "technical"
+    ],
+    "urgencies": [
+      "high"
+    ],
+    "purpose": "Recognize an urgent outage."
+  },
+  {
+    "id": "sales",
+    "message": "What plans do you offer for a team of ten, and how much do they cost?",
+    "categories": [
+      "sales"
+    ],
+    "urgencies": [
+      "low"
+    ],
+    "purpose": "Distinguish a pricing inquiry from billing."
+  },
+  {
+    "id": "ambiguous",
+    "message": "I upgraded my plan, but the premium features are still locked. Can you help?",
+    "categories": [
+      "billing",
+      "technical"
+    ],
+    "urgencies": [
+      "medium"
+    ],
+    "purpose": "Accept either reasonable interpretation."
+  },
+  {
+    "id": "unrelated",
+    "message": "The autumn leaves look beautiful today.",
+    "categories": [
+      "unknown"
+    ],
+    "urgencies": [
+      "low"
+    ],
+    "purpose": "Avoid inventing a support category."
+  }
+]

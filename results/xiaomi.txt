@@ -1,0 +1,9 @@
+Model: xiaomi/mimo-v2.6-flash
+PASS billing: {"category": "billing", "urgency": "medium", "reason": "The message concerns a duplicate subscription charge and a refund request, which is a routine billing issue requiring standard resolution."}
+PASS technical: {"category": "technical", "urgency": "high", "reason": "A production outage blocking all customers is a critical technical failure requiring immediate attention."}
+FAIL sales: Reply is not a strict JSON object
+PASS ambiguous: {"category": "billing", "urgency": "medium", "reason": "The issue involves a recent plan upgrade where paid features aren't unlocking, which points to a billing or subscription problem requiring routine resolution."}
+PASS unrelated: {"category": "unknown", "urgency": "low", "reason": "The message is a general observation about the weather and scenery, with no connection to billing, technical, or sales topics."}
+Summary: model=xiaomi/mimo-v2.6-flash passed=4/5
+prompt_tokens: 673
+completion_tokens: 328
