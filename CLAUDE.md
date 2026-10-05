@@ -21,6 +21,10 @@ One paragraph. Link to the current `spec.md`.
 
 ## Working rules
 
+- This is the Week 3 introductory lab. Stages assigned: intent and spec.
+  No plan.md, no branches or pull requests. Commit to main.
+- Standard library only, except that Java may add one JSON library jar.
+
 For an introductory lab, follow its explicitly assigned stages; the full chain below applies to major projects. Week 1 uses its own minimal repository.
 
 - Write or update `intent/` and `spec.md` before code. Get `plan.md` approved before implementing.
